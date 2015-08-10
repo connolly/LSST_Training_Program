@@ -1,0 +1,159 @@
+\documentclass[nofootbib,floatfix,11pt]{article}
+\usepackage[square]{natbib}
+\usepackage[paperwidth=8.5in,paperheight=11in,centering,margin=1in]{geometry}
+\usepackage{paralist}
+\usepackage{parskip}
+\parskip=5pt
+
+% suck up extra white space
+%\setlength{\parskip}{3pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+\usepackage{tabularx}
+
+\renewcommand{\thefootnote}{\alph{footnote}}
+\setlength{\belowcaptionskip}{-10pt}
+
+\usepackage{amsmath}
+\usepackage{amsbsy}
+
+\pagestyle{empty}
+
+\begin{document} 
+
+\begin{center}
+{\Large The  LSST Science Fellowship Program}
+
+Director: Lucianne Walkowicz (Adler Planetarium and University of Chicago)\\
+Andy Connolly (University of Washington),  Zeljko Ivezic (University of Washington), Mario Juric  (University of Washington), Vicky Kalogera (NorthWestern), Chris Lintott (Oxford University), Robert Lupton (Princeton University), Phil Marshall (SLAC National Lab and Stanford University).
+
+\end{center}
+
+\bigskip
+
+\section{Introduction}
+
+With a new generation of ground and space-based surveys generating petabytes of data per year, together with the increasing complexity of data coming from these instruments, astrophysics is becoming ever more dependent on developments in computing. There is, however, a disconnect between the skills that are needed for an era rich in data and those that we teach to incoming graduate students and early-career postdocs. We propose here a program that will enhance a traditional physics curriculum; extending a strong physics education to one that encompasses computational techniques, programming skills, data management, statistics, and data analysis.
+
+There are a number of exemplars in the astronomy community for how to train cohorts of students to address a common set of science questions. One of the most successful of these was the European Union sponsored Gaia Research for European Astronomy Training (GREAT) Network. The goal of the GREAT network was to equip students ``with the skills and expertise to become future leaders in astronomy or to enter industry, especially in the area of information and communication technologies''.
+Over a period of $3-5$ years, they trained cohorts of students through a series of schools and workshops with a coherent curriculum that addressed both the science and technical aspects of working with Gaia data. The impact of this program was not just a set of students with the right skills but also a community, working in a common field, who knew and interacted with one another throughout the year. 
+
+This proposal describes such a program tailored to the science of all of the LSST science collaborations; the LSST Science Fellowship Program. 
+
+
+\section{An ongoing training program}
+
+The primary goals of the LSST Science Fellowship program are to teach the skills required for LSST science that are not easily addressed by current astrophysics graduate programs (i.e.\ to enhance and not replace the current physics based curricula). By creating a two year training program (with 3 one-week schools per year) we expect to have sufficient time to teach the appropriate skills, to interleave hands-on applications using precursor data so that the training will be directly applicable to a student's research, and to create an online resource that could be used by the broader astronomical community (i.e.\ a curriculum with associated teaching material).  We propose to start this program in summer of 2016 with an initial cohort of 15 students and bring in (and graduate) 15 new students per year. A 2016 start will provide sufficient time to complete the development of the curriculum and logistics so that each workshop or school will build upon the material presented in earlier schools.
+
+With a recycle time of two years (50\% of the cohort entering and leaving each year) there is the opportunity for rolling cohorts, which means that we can implement peer based learning schemes such as pair or quad coding, which have been shown to be highly effective for the acquisition of skills. By keeping the cohort small we enable not just the training of students but also the development of a community, working in common aspects of data, who know an interact with one another on a regular basis and will continue to interact in the time between workshops.  The curriculum will adopt a spiral philosophy where all aspects of the topics described below will be introduced in each workshop (building upon previous material). Each workshop may emphasis a particular theme but statistics, data management, software engineering, visualization will be incorporated into all of the classes. Besides lectures, the workshops will emphasize group projects so that the majority of the work is hands-on. These hands-on components will focus on the primary science objectives drawn from all of the LSSTC science collaborations including cadence optimization, software and data products for level 3, transient classification, and moving sources.
+
+Students who do not yet possess basic proficiency in python will be expected to do some homework prior to the workshop start to bring themselves up to speed (e.g. courses available from learnpythonthehardway, coursera, codeacademy etc.). Our goal is not to teach basic syntax of coding so much as a conceptual framework and best practices for code development
+
+%Students will be coached on collaborative processes and how to educate each other both at the workshop and within the community beyond.
+
+We envisage an initial program that will run for 3 years and educate and graduate two cohorts of students (30 students). This will provide sufficient time to evaluate the impact of the program. The timeline (starting in the summer of  2016) is set to enable these cohorts to have graduated from the program by the start of LSST commissioning. Assuming that we enroll second year graduate students into the program (i.e.\ those who have completed much of their initial physics prerequisites), the first set of graduate students will also be graduating and becoming postdocs at the time of commissioning. This will seed both the LSSTC and broader astronomy community with educational ambassadors for these kinds of LSST-relevant skills.
+
+The faculty for the program will be drawn primarily from LSSTC members who are not directly involved in the construction of the project. Project personnel may be lectures for the summer schools where project specific knowledge needs to be imparted to the students. The program will be led by Lucianne Walkowicz (Adler Planetarium and University of Chicago). Lucianne will serve as the director of the school for the first three years of the program. Members of the LSSTC who have expressed an interest in teaching at the school include:
+
+A proposed curriculum for these summer schools would include the following areas: 
+
+\begin{itemize}
+\item “Data Science”: an introduction to statistics, machine learning, and information theory including a brief introduction to common tools used in software engineering (e.g. code repositories, issue tracking, GitHub)
+\item Image processing: an introduction to and hands-on experience with the LSST image processing tools including the analysis of existing data sets
+\item Non-supervised machine learning: the application and use of density estimation and clustering techniques with astronomical data
+\item Supervised machine learning and time series: classification of multispectral data and time series analysis of variable sources with incomplete and noisy sampling
+\item Scalable programing and data management: use of databases and parallel programming that can enable analyses to scale to large data sets
+\item Data visualization: visualization of LSST images and catalog data including interactive visualization
+\end{itemize}
+
+Schools will be rotated through the LSSTC member institutes to maximize the exposure of the students to the research that is ongoing throughout the consortium and to enable LSSTC institutions to advertise themselves to an up and coming (and well trained) set of grad students and postdocs. By making use of this diversity of skills within our collaboration we can seed our institutes with grad students and postdocs who have been trained and who can then train others within their own individual universities (an infection model). To minimize the cost of the program any institute who will host one of the summer schools will be required to commit to provide postdocs and advanced graduate students who will TA the hands-on activities. This will help engage the postdoctoral communities within the LSSTC within this school. 
+
+All materials generated for this program will be made available as open source and will be accessible to all student within and beyond the LSSTC member institutes.
+
+All students who complete the program and graduate will be awarded the title of LSST Science Fellow to demonstrate that they have attended the school.
+
+
+\section{Timeline and budget}
+
+We provide three funding scenarios for the program. These scenarios are: a full funding model (where LSSTC funds the entirety of the  program), the Northwestern model (where Northwestern and matching funds from the Simonyi-Gates fund support the postdoctoral fellow), and the minimal model (where Northwestern and matching funds support the postdoctoral fellow and there is reduced support for student travel). For all scenarios we propose an initial 2 day workshop in 2015 for the potential faculty to discuss and define the structure of the curriculum and materials that will need to be developed. Support for this is requested at a level of \$5K.
+
+In each of these models we assume that there will be a postdoctoral fellow who will establish and develop the student body. This postdoc will support the director, develop curricula for the program, manage the web-based material, interact with the teaching faculty to ensure that the teaching material is consistent with the curriculum, develop hands on activities for the schools, and work with the institutional TAs to ensure that they are trained in the tools used by the program. We expect that this postdoc would spend 70\% of their time on the Fellowship program and 30\% on LSST related research. 
+
+The cost of a postdoctoral fellow (at a salary of \$55K and assuming the Northwestern 25\% benefit rate and no overhead) would be \$68.75K per year. Travel expenses for a student to attend three one-week workshops/schools per year is estimated at \$4,000 per student. Support for faculty who teach at the schools is \$1K for travel per faculty per school or \$9K per year (assuming three faculty per school).
+
+We assume that expense reimbursements will be handled through the LSSTC (including student travel and local expenses for food etc) to minimize administrative costs.
+
+We note that additional students (up to an additional 15 per year) could be accommodated in the school if they paid their own travel costs.
+
+We will seek additional support from foundations, the NSF and DOE for this program. We have initiated a discussion with Earnestine Easter a program officer in NSF's Division of Graduate  Education  to use this workshop as a model for a new way of teaching graduate students.
+
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\begin{table}
+\begin{tabularx}{\textwidth} {|X|R|R|R|R|R|R|}
+  \hline  
+ Year &\#~New Students & \# Students Enrolled	& Student Support &Teaching Faculty Support & Postdoctoral Support & Yearly Cost\\
+\hline
+2015 & 0 & 0 & 0 & \$5K & 0 & \$5K\\ 
+2016&	15&	15&	\$60K&	\$9K&	\$68.75K&	\$137.75K\\
+2017&	15&	30&	\$120K& \$9K&	\$68.75K&	\$197.75K\\
+2018&	0&	15&	\$60K&	\$9K&	\$68.75K&	\$137.75K\\
+\hline
+Total cost& & & \$240K & \$32K & \$206.25K &	\$478.25K\\
+  \hline 
+\end{tabularx}
+\caption{Fully costed model for the LSST training program.}
+\end{table}
+
+
+\begin{table}
+\begin{tabularx}{\textwidth} {|X|R|R|R|R|R|R|}
+  \hline  
+ Year &\#~New Students & \# Students Enrolled	& Student Support &Teaching Faculty Support & Postdoctoral Support & Yearly Cost\\
+\hline
+2015 & 0 & 0 & 0 & \$5K & 0 & \$5K\\ 
+2016&	15&	15&	\$60K&	\$9K&	\$0K&	\$69K\\
+2017&	15&	30&	\$120K& \$9K&	\$0K&	\$129K\\
+2018&	0&	15&	\$60K&	\$9K&	\$0K&	\$69K\\
+\hline
+Total cost& & & \$240K & \$32K & \$0K &	\$272K\\
+  \hline 
+\end{tabularx}
+\caption{``Northwestern'' costed model for the LSST training program. This assumes Northwestern will fund 50\% of the postdoc and the other 50\% will come from matching funds}
+\end{table}
+
+
+\begin{table}
+\begin{tabularx}{\textwidth} {|X|R|R|R|R|R|R|}
+  \hline  
+ Year &\#~New Students & \# Students Enrolled	& Student Support &Teaching Faculty Support & Postdoctoral Support & Yearly Cost\\
+\hline
+2015 & 0 & 0 & 0 & \$5K & 0 & \$5K\\ 
+2016&	15&	15&	\$30K&	\$9K&	\$0K&	\$69K\\
+2017&	15&	30&	\$600K& \$9K&	\$0K&	\$129K\\
+2018&	0&	15&	\$30K&	\$9K&	\$0K&	\$69K\\
+\hline
+Total cost& & & \$120K & \$32K & \$0K &	\$152K\\
+   \hline 
+\end{tabularx}
+\caption{``Minimal'' costed model for the LSST training program. This assumes Northwestern will fund 50\% of the postdoc and the other 50\% will come from matching funds and that travel support for students will be capped at 50\% of the total cost}
+\end{table}
+
+
+
+\subsection{Timeline}
+
+To accomplish this program we propose a timeline
+\begin{itemize}
+\item Advertise postdoc postion Sept 2015
+\item Workshop on curriculum development November 2015
+\item Onboard hired postdoc Jan 2016
+\item First School June 2016 
+\item Second School Dec 2016 
+\end{itemize}
+
+\end{document}
+
